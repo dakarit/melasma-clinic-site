@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f3ef" />
+    <title>Melasma Clinic — Dr Tompi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar" aria-label="Primary">
+        <a class="topbar__miniLogo" href="./index.html" aria-label="Melasma Clinic home">
+          <img
+            class="topbar__logoImg"
+            src="./assets/logo-orange.png"
+            alt="Melasma Clinic by Dr Tompi"
+            width="120"
+            height="44"
+          />
+        </a>
+
+        <nav class="topbar__nav" aria-label="Top navigation">
+          <a href="./index.html" class="topbar__link topbar__link--active" aria-current="page"><span data-i18n="nav.home">Home</span></a>
+          <div class="topbar__navDrop" data-nav-drop-wrap>
+            <button class="topbar__link topbar__link--drop" data-nav-drop-btn aria-expanded="false" type="button"><span data-i18n="nav.about">About</span> <svg class="topbar__dropChev" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="topbar__navDropMenu" data-nav-drop-menu hidden>
+              <a href="./about/melasma-clinic.html" class="topbar__dropItem"><span class="topbar__dropItemName" data-i18n="nav.about.melasmaClinic.name">About Melasma Clinic</span><span class="topbar__dropItemDesc" data-i18n="nav.about.melasmaClinic.desc">Our story &amp; mission</span></a>
+              <a href="./about/beyoutiful-group.html" class="topbar__dropItem"><span class="topbar__dropItemName" data-i18n="nav.about.beyoutiful.name">Beyoutiful Group</span><span class="topbar__dropItemDesc" data-i18n="nav.about.beyoutiful.desc">Our parent company</span></a>
+              <a href="./about/doctors.html" class="topbar__dropItem"><span class="topbar__dropItemName" data-i18n="nav.about.doctors.name">Our Doctors</span><span class="topbar__dropItemDesc" data-i18n="nav.about.doctors.desc">Meet the team</span></a>
+            </div>
+          </div>
+          <div class="topbar__navDrop" data-nav-drop-wrap>
+            <button class="topbar__link topbar__link--drop" data-nav-drop-btn aria-expanded="false" type="button"><span data-i18n="nav.resources">Resources</span> <svg class="topbar__dropChev" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="topbar__navDropMenu" data-nav-drop-menu hidden>
+              <a href="./resources/index.html" class="topbar__dropItem"><span class="topbar__dropItemName" data-i18n="nav.resources.center.name">Resource Center</span><span class="topbar__dropItemDesc" data-i18n="nav.resources.center.desc">Learn about skin &amp; melasma</span></a>
+              <a href="./faq.html" class="topbar__dropItem"><span class="topbar__dropItemName">FAQ</span><span class="topbar__dropItemDesc" data-i18n="nav.resources.faq.desc">Common questions answered</span></a>
+            </div>
+          </div>
+          <div class="topbar__navDrop" data-nav-drop-wrap>
+            <button class="topbar__link topbar__link--drop" data-nav-drop-btn aria-expanded="false" type="button"><span data-i18n="nav.location">Location</span> <svg class="topbar__dropChev" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="topbar__navDropMenu" data-nav-drop-menu hidden>
+              <a href="./location.html#pekanbaru" class="topbar__dropItem"><span class="topbar__dropItemName">Pekanbaru</span><span class="topbar__dropItemDesc">Living World Pekanbaru</span></a>
+              <a href="./location.html#semarang" class="topbar__dropItem"><span class="topbar__dropItemName">Semarang</span><span class="topbar__dropItemDesc">DP Mall Semarang</span></a>
+            </div>
+          </div>
+          <a href="./services.html" class="topbar__link"><span data-i18n="nav.services">Our Services</span></a>
+        </nav>
+
+        <div class="topbar__right">
+          <button type="button" class="langSwitch" data-lang-toggle aria-label="Switch language">
+            <svg class="langSwitch__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            <span data-lang-current>EN</span>
+          </button>
+          <button class="topbar__bookBtn" data-global-book type="button"><span data-i18n="nav.book">Book</span></button>
+          <div class="topbar__bookDrop" data-global-book-drop hidden>
+            <a class="treatBook__chip" href="http://wa.me/62811150362" target="_blank" rel="noreferrer">
+              <span class="treatBook__chipName">Pekanbaru</span>
+              <span class="treatBook__chipMeta">WhatsApp</span>
+            </a>
+            <a class="treatBook__chip" href="https://wa.me/628118051150" target="_blank" rel="noreferrer">
+              <span class="treatBook__chipName">Semarang</span>
+              <span class="treatBook__chipMeta">WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <button class="topbar__burger" data-burger aria-expanded="false" aria-label="Open navigation">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <div class="mobileNav" data-mobile-nav aria-hidden="true" aria-label="Mobile navigation">
+        <div class="mobileNav__panel">
+          <div class="mobileNav__header">
+            <div class="mobileNav__headLeft">
+              <span class="mobileNav__brand">Melasma Clinic</span>
+              <button type="button" class="langSwitch" data-lang-toggle aria-label="Switch language">
+                <svg class="langSwitch__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+                <span data-lang-current>EN</span>
+              </button>
+            </div>
+            <button class="mobileNav__close" data-mobile-nav-close aria-label="Close navigation">✕</button>
+          </div>
+          <nav class="mobileNav__links">
+            <a href="./index.html" class="mobileNav__link mobileNav__link--active" data-i18n="nav.home">Home</a>
+            <a href="./about/melasma-clinic.html" class="mobileNav__link" data-i18n="mobile.about">About</a>
+            <a href="./resources/index.html" class="mobileNav__link" data-i18n="mobile.resources">Resources</a>
+            <a href="./location.html" class="mobileNav__link" data-i18n="mobile.location">Location</a>
+            <a href="./services.html" class="mobileNav__link" data-i18n="mobile.services">Our Services</a>
+            <a href="./faq.html" class="mobileNav__link">FAQ</a>
+          </nav>
+          <div class="mobileNav__divider"></div>
+          <div class="mobileNav__contact" data-i18n="mobile.contact">Contact</div>
+          <a class="mobileNav__footerLink" href="http://wa.me/62811150362" target="_blank" rel="noreferrer">
+            Pekanbaru Admin <span>WhatsApp</span>
+          </a>
+          <a class="mobileNav__footerLink" href="https://wa.me/628118051150" target="_blank" rel="noreferrer">
+            Semarang Admin <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <main class="frame frame--home" aria-label="Home">
+        <section class="left" aria-label="Brand and side controls">
+          <div class="brand">
+            <div class="brand__wordmarkRow">
+              <div class="brand__wordmark">
+                <span class="brand__wordmarkMain">Melasma</span><span class="brand__wordmarkDot"> Clinic</span>
+              </div>
+              <p class="brand__sub">By Dr Tompi</p>
+            </div>
+          </div>
+          <div class="side">
+            <p class="brand__claim" data-i18n-html="hero.claim.html">Indonesia's <span class="brand__claimAccent">first</span> melasma-focused clinic</p>
+          </div>
+        </section>
+
+        <section class="right" aria-label="Hero">
+          <div class="heroMasonry" id="heroMasonry">
+            <!-- Column 1, rows 1–2: tall, pair A -->
+            <div class="hCell hCell--tall" data-hcell data-before="./assets/webp/1_1 A1.webp" data-after="./assets/webp/1_1 A2.webp">
+              <div class="hCell__inner">
+                <img class="hCell__img hCell__img--before" src="./assets/webp/1_1 A1.webp" alt="Before treatment" loading="eager" />
+                <img class="hCell__img hCell__img--after" src="./assets/webp/1_1 A2.webp" alt="After treatment" loading="eager" />
+              </div>
+            </div>
+            <!-- Column 2, rows 1–2: tall, pair B -->
+            <div class="hCell hCell--tall" data-hcell data-before="./assets/webp/1_1 B1.webp" data-after="./assets/webp/1_1 B2.webp">
+              <div class="hCell__inner">
+                <img class="hCell__img hCell__img--before" src="./assets/webp/1_1 B1.webp" alt="Before treatment" loading="eager" />
+                <img class="hCell__img hCell__img--after" src="./assets/webp/1_1 B2.webp" alt="After treatment" loading="eager" />
+              </div>
+            </div>
+            <!-- Columns 3–4, row 1: wide, pair G -->
+            <div class="hCell hCell--wide" data-hcell data-before="./assets/webp/1_1 G1.webp" data-after="./assets/webp/1_1 G2.webp">
+              <div class="hCell__inner">
+                <img class="hCell__img hCell__img--before" src="./assets/webp/1_1 G1.webp" alt="Before treatment" loading="eager" />
+                <img class="hCell__img hCell__img--after" src="./assets/webp/1_1 G2.webp" alt="After treatment" loading="eager" />
+              </div>
+            </div>
+            <!-- Columns 5–6, row 1: wide, pair J -->
+            <div class="hCell hCell--wide" data-hcell data-before="./assets/webp/1_1 J1.webp" data-after="./assets/webp/1_1 J2.webp">
+              <div class="hCell__inner">
+                <img class="hCell__img hCell__img--before" src="./assets/webp/1_1 J1.webp" alt="Before treatment" loading="eager" />
+                <img class="hCell__img hCell__img--after" src="./assets/webp/1_1 J2.webp" alt="After treatment" loading="eager" />
+              </div>
+            </div>
+            <!-- Column 3, row 2: small, pair H -->
+            <div class="hCell" data-hcell data-before="./assets/webp/1_1 H1.webp" data-after="./assets/webp/1_1 H2.webp">
+              <div class="hCell__inner">
+                <img class="hCell__img hCell__img--before" src="./assets/webp/1_1 H1.webp" alt="Before treatment" loading="eager" />
+                <img class="hCell__img hCell__img--after" src="./assets/webp/1_1 H2.webp" alt="After treatment" loading="eager" />
+              </div>
+            </div>
+            <!-- Column 4, row 2: small, pair C -->
+            <div class="hCell" data-hcell data-before="./assets/webp/1_1 C1.webp" data-after="./assets/webp/1_1 C2.webp">
+              <div class="hCell__inner">
+                <img class="hCell__img hCell__img--before" src="./assets/webp/1_1 C1.webp" alt="Before treatment" loading="eager" />
+                <img class="hCell__img hCell__img--after" src="./assets/webp/1_1 C2.webp" alt="After treatment" loading="eager" />
+              </div>
+            </div>
+            <!-- Columns 5–6, row 2: wide, pair 9:16 C -->
+            <div class="hCell hCell--wide" data-hcell data-before="./assets/webp/9_16 C1.webp" data-after="./assets/webp/9_16 C2.webp">
+              <div class="hCell__inner">
+                <img class="hCell__img hCell__img--before" src="./assets/webp/9_16 C1.webp" alt="Before treatment" loading="eager" />
+                <img class="hCell__img hCell__img--after" src="./assets/webp/9_16 C2.webp" alt="After treatment" loading="eager" />
+              </div>
+            </div>
+            <!-- Columns 1–2, rows 3–4: big, pair 9:16 A -->
+            <div class="hCell hCell--wide hCell--tall" data-hcell data-before="./assets/webp/9_16 A1.webp" data-after="./assets/webp/9_16 A2.webp">
+              <div class="hCell__inner">
+                <img class="hCell__img hCell__img--before" src="./assets/webp/9_16 A1.webp" alt="Before treatment" loading="eager" />
+                <img class="hCell__img hCell__img--after" src="./assets/webp/9_16 A2.webp" alt="After treatment" loading="eager" />
+              </div>
+            </div>
+            <!-- Columns 3–4, rows 3–4: big, pair 9:16 B -->
+            <div class="hCell hCell--wide hCell--tall" data-hcell data-before="./assets/webp/9_16 B1.webp" data-after="./assets/webp/9_16 B2.webp">
+              <div class="hCell__inner">
+                <img class="hCell__img hCell__img--before" src="./assets/webp/9_16 B1.webp" alt="Before treatment" loading="eager" />
+                <img class="hCell__img hCell__img--after" src="./assets/webp/9_16 B2.webp" alt="After treatment" loading="eager" />
+              </div>
+            </div>
+            <!-- Columns 5–6, rows 3–4: big, pair D -->
+            <div class="hCell hCell--wide hCell--tall" data-hcell data-before="./assets/webp/1_1 D1.webp" data-after="./assets/webp/1_1 D2.webp">
+              <div class="hCell__inner">
+                <img class="hCell__img hCell__img--before" src="./assets/webp/1_1 D1.webp" alt="Before treatment" loading="eager" />
+                <img class="hCell__img hCell__img--after" src="./assets/webp/1_1 D2.webp" alt="After treatment" loading="eager" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Lightbox: opens when a photo is clicked -->
+          <div class="hLightbox" id="hLightbox" aria-hidden="true">
+            <!-- One photo -->
+            <div class="hLightbox__inner" id="hLightboxSingle">
+              <button class="hLightbox__close" id="hLightboxClose" aria-label="Close">✕</button>
+              <img class="hLightbox__img" id="hLightboxImg" src="" alt="" />
+            </div>
+            <!-- Before and after, side by side -->
+            <div class="hLightbox__inner hLightbox__inner--pair" id="hLightboxPair" hidden>
+              <button class="hLightbox__close" id="hLightboxClose2" aria-label="Close">✕</button>
+              <div class="hLightbox__pair">
+                <div class="hLightbox__pairSide">
+                  <img class="hLightbox__img" id="hLightboxBefore" src="" alt="Before" />
+                  <div class="hLightbox__pairLabel">Before</div>
+                </div>
+                <div class="hLightbox__pairSide">
+                  <img class="hLightbox__img" id="hLightboxAfter" src="" alt="After" />
+                  <div class="hLightbox__pairLabel">After</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- ── Home scroll content ──────────────────────────────────────────── -->
+      <div class="homeScroll" aria-label="About the clinic">
+
+        <!-- Latest Instagram post. To change it, paste the post's URL into
+             data-instgrm-permalink below. For a feed that updates on its own,
+             a free widget like lightwidget.com would work instead. -->
+        <section class="homeRow homeRow--ig" data-reveal>
+          <div class="homeRow__inner">
+            <div class="igRow">
+              <div class="igRow__label">
+                <a href="https://www.instagram.com/melasmaclinic_bydrtompi/" target="_blank" rel="noreferrer" class="igRow__handle">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+                  @melasmaclinic_bydrtompi
+                </a>
+                <p class="igRow__sub" data-i18n="ig.sub">Latest from our Instagram</p>
+              </div>
+              <div class="igRow__embed">
+                <iframe
+                  src="https://www.instagram.com/melasmaclinic_bydrtompi/embed"
+                  class="igRow__iframe"
+                  frameborder="0"
+                  scrolling="no"
+                  allowtransparency="true"
+                  title="Melasma Clinic Instagram"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 01 — Healing begins here -->
+        <section class="homeRow homeRow--editorial" data-reveal>
+          <div class="homeRow__inner">
+            <div class="homeRow__num">
+              <span class="homeRow__numText">01</span>
+              <div class="homeRow__numRule"></div>
+              <span class="homeRow__numLabel" data-i18n="s1.label">Foundation</span>
+            </div>
+            <div class="homeRow__ed">
+              <h2 class="homeRow__h2" data-i18n="s1.h2">Healing begins here</h2>
+              <p class="homeRow__sub" data-i18n="s1.sub">The right answers from the very beginning</p>
+              <p class="homeRow__body" data-i18n="s1.body">Effective treatment starts with an accurate diagnosis. Our experts are dedicated to identifying and treating even the most complex skin concerns with precision and care.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Blue credential band -->
+        <section class="homeRow homeRow--band" data-reveal>
+          <div class="homeBand">
+            <div class="homeBand__rule" aria-hidden="true"></div>
+            <p class="homeBand__eyebrow" data-i18n="band.eyebrow">Indonesia — Est. 2024</p>
+            <h2 class="homeBand__stat" data-i18n="band.stat">Indonesia's first melasma-focused clinic</h2>
+            <p class="homeBand__sub" data-i18n="band.sub">Melasma Clinic by dr. Tompi is the first clinic in Indonesia dedicated specifically to melasma-centered care.</p>
+          </div>
+        </section>
+
+        <!-- 02 — Personalized world-class care -->
+        <section class="homeRow homeRow--asym" data-reveal>
+          <div class="homeRow__inner">
+            <div class="homeRow__asymHead">
+              <div class="homeRow__num homeRow__num--inline">
+                <span class="homeRow__numText">02</span>
+                <div class="homeRow__numRule"></div>
+                <span class="homeRow__numLabel" data-i18n="s2.label">Our Approach</span>
+              </div>
+              <h2 class="homeRow__h2 homeRow__h2--large" data-i18n="s2.h2">Personalized world-class care, wherever you are</h2>
+            </div>
+            <div class="homeRow__asymBody">
+              <p class="homeRow__body" data-i18n="s2.body">At Melasma Clinic by dr. Tompi, we make it seamless for patients from across Indonesia and around the world to access trusted melasma-focused care. From consultation to treatment planning, our team is committed to delivering a comfortable, personalized, and premium experience tailored to every patient's unique skin journey.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Three pillars -->
+        <section class="homeRow homeRow--pillars" data-reveal>
+          <div class="homeRow__inner">
+            <div class="homePillars">
+              <div class="homePillar" data-reveal data-reveal-delay="1">
+                <div class="homePillar__num">01</div>
+                <h3 class="homePillar__title" data-i18n="pillar1.title">Expert team</h3>
+                <p class="homePillar__body" data-i18n="pillar1.body">Your care team includes leading specialists in their field, focused entirely on you. No matter the complexity of your concern, you receive the most advanced care available.</p>
+              </div>
+              <div class="homePillar" data-reveal data-reveal-delay="2">
+                <div class="homePillar__num">02</div>
+                <h3 class="homePillar__title" data-i18n="pillar2.title">Accurate diagnosis</h3>
+                <p class="homePillar__body" data-i18n="pillar2.body">An accurate diagnosis is the foundation of effective treatment. We continuously advance our methods to provide clearer answers and more personalized solutions from the very start.</p>
+              </div>
+              <div class="homePillar" data-reveal data-reveal-delay="3">
+                <div class="homePillar__num">03</div>
+                <h3 class="homePillar__title" data-i18n="pillar3.title">Long-term results</h3>
+                <p class="homePillar__body" data-i18n="pillar3.body">We combine medical-based treatments, responsible innovation, and comprehensive long-term care designed to help you manage melasma safely, naturally, and sustainably.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="homeRow homeRow--quote" data-reveal>
+          <div class="homeRow__inner">
+            <blockquote class="homeQuote">
+              <span class="homeQuote__mark" aria-hidden="true">"</span>
+              <p class="homeQuote__text" data-i18n="quote.text">I have never experienced a level of professionalism and compassion quite like the team at Melasma Clinic by dr. Tompi. Being treated with such genuine care, attention, and respect was truly a remarkable and humbling experience.</p>
+              <footer class="homeQuote__footer">
+                <span class="homeQuote__name" data-i18n="quote.name">Patient, Melasma Clinic</span>
+              </footer>
+            </blockquote>
+          </div>
+        </section>
+
+        <!-- CTA trio -->
+        <section class="homeRow homeRow--cta" data-reveal>
+          <div class="homeRow__inner">
+            <p class="homeCta__kicker" data-i18n="cta.kicker">Things you can do next</p>
+            <div class="homeCtaGrid">
+              <a class="homeCtaItem" href="./services.html">
+                <span class="homeCtaItem__label" data-i18n="cta.treatments">Explore our treatments</span>
+                <span class="homeCtaItem__arrow">→</span>
+              </a>
+              <a class="homeCtaItem" href="./resources/melasma.html">
+                <span class="homeCtaItem__label" data-i18n="cta.melasma">Learn about Melasma</span>
+                <span class="homeCtaItem__arrow">→</span>
+              </a>
+              <a class="homeCtaItem" href="./faq.html">
+                <span class="homeCtaItem__label" data-i18n="cta.faq">Frequently asked questions</span>
+                <span class="homeCtaItem__arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <footer class="footer" aria-label="Site footer">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <div class="footer__brandName">Melasma Clinic</div>
+            <div class="footer__brandBy">By Dr Tompi</div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__colHead" data-i18n="footer.navigate">Navigate</div>
+            <a href="./index.html" class="footer__link" data-i18n="nav.home">Home</a>
+            <a href="./location.html" class="footer__link" data-i18n="footer.location">Location</a>
+            <a href="./services.html" class="footer__link" data-i18n="footer.services">Our Services</a>
+            <a href="./resources/index.html" class="footer__link" data-i18n="footer.resources">Resources</a>
+            <a href="./faq.html" class="footer__link">FAQ</a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__colHead" data-i18n="footer.treatmentsHead">Treatments</div>
+            <a href="./services.html" class="footer__link" data-i18n="footer.hair">Hair</a>
+            <a href="./services.html" class="footer__link">T-Series</a>
+            <a href="./services.html" class="footer__link" data-i18n="footer.neuromodulators">Neuromodulators</a>
+            <a href="./services.html" class="footer__link">Enhancement</a>
+            <a href="./services.html" class="footer__link" data-i18n="footer.medical">Medical Therapy</a>
+            <a href="./services.html" class="footer__link" data-i18n="footer.skincare">Skincare</a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__colHead" data-i18n="footer.follow">Follow</div>
+            <div class="footer__socials">
+              <a class="footer__social" href="https://www.instagram.com/melasmaclinic_bydrtompi/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+                </svg>
+              </a>
+              <a class="footer__social" href="https://www.tiktok.com/@melasmaclinic_bydrtompi" target="_blank" rel="noreferrer" aria-label="TikTok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__copy">© 2025 Melasma Clinic by Dr Tompi</span>
+        </div>
+      </footer>
+    </div>
+    <script src="./app.js" defer></script>
+    <script src="./i18n.js" defer></script>
+  </body>
+</html>

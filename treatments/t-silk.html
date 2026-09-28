@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f3ef" />
+    <title>T-Silk — Melasma Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar" aria-label="Primary">
+        <a class="topbar__miniLogo" href="../index.html" aria-label="Melasma Clinic home">
+          <img class="topbar__logoImg" src="../assets/logo-orange.png" alt="Melasma Clinic by Dr Tompi" width="120" height="44" />
+        </a>
+        <nav class="topbar__nav" aria-label="Top navigation">
+          <a href="../index.html" class="topbar__link"><span data-i18n="nav.home">Home</span></a>
+          <div class="topbar__navDrop" data-nav-drop-wrap>
+            <button class="topbar__link topbar__link--drop" data-nav-drop-btn aria-expanded="false" type="button"><span data-i18n="nav.about">About</span> <svg class="topbar__dropChev" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="topbar__navDropMenu" data-nav-drop-menu hidden>
+              <a href="../about/melasma-clinic.html" class="topbar__dropItem"><span class="topbar__dropItemName" data-i18n="nav.about.melasmaClinic.name">About Melasma Clinic</span><span class="topbar__dropItemDesc" data-i18n="nav.about.melasmaClinic.desc">Our story &amp; mission</span></a>
+              <a href="../about/beyoutiful-group.html" class="topbar__dropItem"><span class="topbar__dropItemName" data-i18n="nav.about.beyoutiful.name">Beyoutiful Group</span><span class="topbar__dropItemDesc" data-i18n="nav.about.beyoutiful.desc">Our parent company</span></a>
+              <a href="../about/doctors.html" class="topbar__dropItem"><span class="topbar__dropItemName" data-i18n="nav.about.doctors.name">Our Doctors</span><span class="topbar__dropItemDesc" data-i18n="nav.about.doctors.desc">Meet the team</span></a>
+            </div>
+          </div>
+          <div class="topbar__navDrop" data-nav-drop-wrap>
+            <button class="topbar__link topbar__link--drop" data-nav-drop-btn aria-expanded="false" type="button"><span data-i18n="nav.resources">Resources</span> <svg class="topbar__dropChev" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="topbar__navDropMenu" data-nav-drop-menu hidden>
+              <a href="../resources/index.html" class="topbar__dropItem"><span class="topbar__dropItemName" data-i18n="nav.resources.center.name">Resource Center</span><span class="topbar__dropItemDesc" data-i18n="nav.resources.center.desc">Learn about skin &amp; melasma</span></a>
+              <a href="../faq.html" class="topbar__dropItem"><span class="topbar__dropItemName">FAQ</span><span class="topbar__dropItemDesc" data-i18n="nav.resources.faq.desc">Common questions answered</span></a>
+            </div>
+          </div>
+          <div class="topbar__navDrop" data-nav-drop-wrap>
+            <button class="topbar__link topbar__link--drop" data-nav-drop-btn aria-expanded="false" type="button"><span data-i18n="nav.location">Location</span> <svg class="topbar__dropChev" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="topbar__navDropMenu" data-nav-drop-menu hidden>
+              <a href="../location.html#pekanbaru" class="topbar__dropItem"><span class="topbar__dropItemName">Pekanbaru</span><span class="topbar__dropItemDesc">Living World Pekanbaru</span></a>
+              <a href="../location.html#semarang" class="topbar__dropItem"><span class="topbar__dropItemName">Semarang</span><span class="topbar__dropItemDesc">DP Mall Semarang</span></a>
+            </div>
+          </div>
+          <a href="../services.html" class="topbar__link"><span data-i18n="nav.services">Our Services</span></a>
+        </nav>
+        <div class="topbar__right">
+          <button type="button" class="langSwitch" data-lang-toggle aria-label="Switch language">
+            <svg class="langSwitch__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            <span data-lang-current>EN</span>
+          </button>
+          <button class="topbar__bookBtn" data-global-book type="button"><span data-i18n="nav.book">Book</span></button>
+          <div class="topbar__bookDrop" data-global-book-drop hidden>
+            <a class="treatBook__chip" href="http://wa.me/62811150362" target="_blank" rel="noreferrer">
+              <span class="treatBook__chipName">Pekanbaru</span>
+              <span class="treatBook__chipMeta">WhatsApp</span>
+            </a>
+            <a class="treatBook__chip" href="https://wa.me/628118051150" target="_blank" rel="noreferrer">
+              <span class="treatBook__chipName">Semarang</span>
+              <span class="treatBook__chipMeta">WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <button class="topbar__burger" data-burger aria-expanded="false" aria-label="Open navigation">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <div class="mobileNav" data-mobile-nav aria-hidden="true" aria-label="Mobile navigation">
+        <div class="mobileNav__panel">
+          <div class="mobileNav__header">
+            <div class="mobileNav__headLeft">
+              <span class="mobileNav__brand">Melasma Clinic</span>
+              <button type="button" class="langSwitch" data-lang-toggle aria-label="Switch language">
+                <svg class="langSwitch__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+                <span data-lang-current>EN</span>
+              </button>
+            </div>
+            <button class="mobileNav__close" data-mobile-nav-close aria-label="Close navigation">✕</button>
+          </div>
+          <nav class="mobileNav__links">
+            <a href="../index.html" class="mobileNav__link"><span data-i18n="nav.home">Home</span></a>
+            <a href="../location.html" class="mobileNav__link"><span data-i18n="mobile.location">Location</span></a>
+            <a href="../index.html#services" class="mobileNav__link"><span data-i18n="mobile.services">Our Services</span></a>
+          </nav>
+          <div class="mobileNav__divider"></div>
+          <div class="mobileNav__contact" data-i18n="mobile.contact">Contact</div>
+          <a class="mobileNav__footerLink" href="http://wa.me/62811150362" target="_blank" rel="noreferrer">
+            Pekanbaru Admin <span>WhatsApp</span>
+          </a>
+          <a class="mobileNav__footerLink" href="https://wa.me/628118051150" target="_blank" rel="noreferrer">
+            Semarang Admin <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <main class="frame frame--single frame--wide" aria-label="T-Silk">
+        <section class="content">
+          <a class="treatBack" href="../index.html#services">← Our Services</a>
+          <header class="pageHead">
+            <div class="pageHead__kicker">T-Series</div>
+            <h1 class="pageHead__title">T-Silk</h1>
+            <p class="pageHead__sub" data-i18n="treat.tSilk.sub">Skin smoothing treatment</p>
+          </header>
+          <div class="treatLayout">
+            <div class="treatDesc">
+              <p data-i18n="treat.tSilk.p1">T-Silk is a skin-smoothing treatment from Dr Tompi's T-Series range, designed to refine skin texture and improve surface softness.</p><p data-i18n="treat.tSilk.p2">Specific technique details and active formulations are tailored per patient and discussed during consultation at the clinic.</p>
+            </div>
+            <div class="treatImage" aria-hidden="true">
+              <img src="../assets/webp treatment/TSILK.webp" alt="" class="treatImage__img" />
+            </div>
+            <div class="treatActions">
+              <div class="treatPoints">
+                <div class="treatPoints__title" data-i18n="treat.keyPoints">Key points</div>
+                <ul class="treatPoints__list" data-i18n-html="treat.tSilk.points">
+                  <li>Targets uneven skin surface and roughness</li><li>Developed as part of the proprietary T-Series range</li><li>Suitable as a standalone or adjunct treatment</li><li>Results assessed progressively over sessions</li>
+                </ul>
+              </div>
+              <div class="treatBook">
+                <button class="treatBook__btn" data-book-toggle aria-expanded="false" type="button">
+                  <span data-i18n="treat.bookBtn">Book a Consultation</span>
+                  <svg class="treatBook__chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <div class="treatBook__dropdown" data-book-dropdown hidden>
+                  <a class="treatBook__chip" href="http://wa.me/62811150362" target="_blank" rel="noreferrer">
+                    <span class="treatBook__chipName">Pekanbaru</span>
+                    <span class="treatBook__chipMeta">WhatsApp</span>
+                  </a>
+                  <a class="treatBook__chip" href="https://wa.me/628118051150" target="_blank" rel="noreferrer">
+                    <span class="treatBook__chipName">Semarang</span>
+                    <span class="treatBook__chipMeta">WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" aria-label="Site footer">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <div class="footer__brandName">Melasma Clinic</div>
+            <div class="footer__brandBy">By Dr Tompi</div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__colHead" data-i18n="footer.navigate">Navigate</div>
+            <a href="../index.html" class="footer__link"><span data-i18n="nav.home">Home</span></a>
+            <a href="../location.html" class="footer__link"><span data-i18n="footer.location">Location</span></a>
+            <a href="../index.html#services" class="footer__link"><span data-i18n="footer.services">Our Services</span></a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__colHead" data-i18n="footer.treatmentsHead">Treatments</div>
+            <a href="../index.html#services-hair" class="footer__link">Hair</a>
+            <a href="../index.html#services-tseries" class="footer__link">T-Series</a>
+            <a href="../index.html#services-neuro" class="footer__link">Neuromodulators</a>
+            <a href="../index.html#services-enhance" class="footer__link">Enhancement</a>
+            <a href="../index.html#services-therapy" class="footer__link">Medical Therapy</a>
+            <a href="../index.html#services-homecare" class="footer__link">Homecare</a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__colHead" data-i18n="footer.follow">Follow</div>
+            <div class="footer__socials">
+              <a class="footer__social" href="https://www.instagram.com/melasmaclinic_bydrtompi/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+                </svg>
+              </a>
+              <a class="footer__social" href="https://www.tiktok.com/@melasmaclinic_bydrtompi" target="_blank" rel="noreferrer" aria-label="TikTok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__copy">© 2025 Melasma Clinic by Dr Tompi</span>
+        </div>
+      </footer>
+    </div>
+    <script src="../app.js" defer></script>
+    <script src="../i18n.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors and tools
+.vscode/
+.idea/
+.claude/
+
+# Env
+.env
+.env.*
+
+# Build output and dependencies (none are used, but just in case)
+node_modules/
+_site/
+dist/
+build/
+
+# Logs
+*.log
+
+# Deploy bundles and raw source files from the clinic
+*.zip
+*.ai
+*.psd
+*.heic
+*.HEIC
+*.docx
